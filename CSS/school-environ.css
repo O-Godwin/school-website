@@ -1,0 +1,43 @@
+.school {
+    margin: 3rem 1.5rem 2.5rem 1.5rem;
+    text-align: center;
+    background: var(--color-bg2);
+}
+
+
+.school__container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3rem;
+  }
+
+  .school:hover {
+    
+    box-shadow: 0 3rem 2rem rgba(0, 0, 0, 0.5);
+    background: var(--color-bg1);
+  }
+
+
+
+/* ================== MEDIA QUERIES (TABLETS)
+================== */
+@media screen and (max-width: 1024px) {
+    .school {
+        margin-top: 2rem;
+        padding-bottom: 1rem;
+    }
+
+    .school__container {
+        gap: 1.5rem;
+        margin-top: 3rem;
+        height: auto;
+        padding: 1.5rem;
+        grid-template-columns: 1fr;
+        gap: 3rem;
+    }
+   
+}
+
+
+/* ==================  MEDIA QUERIES (PHONES)
+================== */
